@@ -41,22 +41,22 @@ $this->inc('elements/header.php'); ?>
 
 <div id="main-content-post-author">
 			
-				<?php 
-				$u = new User();
-				if ($u->isRegistered()) { ?>
-					<?php  
-					if (Config::get("ENABLE_USER_PROFILES")) {
-						$userName = '<a href="' . $this->url('/profile') . '">' . $u->getUserName() . '</a>';
-					} else {
-						$userName = $u->getUserName();
-					}
-				}
-				?>
-
-<p><?php echo t('Posted by:');?> <span class="post-author"><?php  echo $userName; ?></span></p>	
+<?php
+$user = UserInfo::getByID($c->getCollectionUserID());
+if (is_object($user)) {
+	$userName = ($user->getAttribute('name')) ? $user->getAttribute('name') : $user->getUserName();
+	if (Config::get("ENABLE_USER_PROFILES")) {
+		$userName = '<a href="' . $this->url('/profile') . '">' . $userName . '</a>';
+	}
+	?><p><?php echo t('Posted by:');?> <span class="post-author"><?php  echo $userName; ?></span></p><?php
+}
+?>
 <!--main-content-post-author_end--></div>
 <!--mod_entry_inner_end--></div>
-
+<?php 
+$a = new Area('Blog Footer');
+$a->display($c);
+?>
 
 <!--mod_entry_end--></div>
 

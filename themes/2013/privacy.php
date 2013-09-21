@@ -8,7 +8,7 @@ $this->inc('elements/header.php'); ?>
 
 <article id="area_main">
 <header class="mod_pageheader ex_clearfix">
-<h1><spanPprivacy</span><strong>プライバシーポリシー</strong></h1>
+<h1><span>Pprivacy</span><strong>プライバシーポリシー</strong></h1>
 <!--mod_pageheader_end--></header>
 
 <div class="mod_breadcrumbs">
@@ -19,10 +19,12 @@ $this->inc('elements/header.php'); ?>
 <!-- mod_breadcrumbs_end --></div>
 
 <section class="mod_pagecontents">
+<div class="mod_pagecontents_sec">
 			<?php 
 			$a = new Area('Main');
 			$a->display($c);
 			?>
+<!--mod_pagecontents_sec_end--></div>
 <!--mod_contents_end--></section>
 
 <footer class="mod_mainfooter">

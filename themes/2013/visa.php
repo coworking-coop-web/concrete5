@@ -8,7 +8,7 @@ $this->inc('elements/header.php'); ?>
 
 <article id="area_main">
 <header class="mod_pageheader ex_clearfix">
-<h1><span>Coworking visa.jp</span><strong>コワーキングスペースvisa.jpの紹介</strong></h1>
+<h1><span>コワーキングビザjp</span><strong>コワーキングビザjpの紹介</strong></h1>
 <!--mod_pageheader_end--></header>
 
 <div class="mod_breadcrumbs">

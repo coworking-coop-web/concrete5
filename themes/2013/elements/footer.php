@@ -21,9 +21,15 @@
 		$a->display();
 		?>
 </section>
-<section class="even">
+<section>
 		<?php 
 		$a = new GlobalArea('Footer Navi03');
+		$a->display();
+		?>
+</section>
+<section>
+		<?php 
+		$a = new GlobalArea('Footer Navi06');
 		$a->display();
 		?>
 </section>
@@ -35,7 +41,7 @@
 		$a->display();
 		?>
 </section>
-<section class="even">
+<section>
 		<?php 
 		$a = new GlobalArea('Footer Navi05');
 		$a->display();
