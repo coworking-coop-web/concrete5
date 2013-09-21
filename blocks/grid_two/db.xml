@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btDCGridTwo">
+		<field name="bID" type="I"><key /><unsigned /></field>
+
+		<field name="field_1_textarea_text" type="X"></field>
+
+		<field name="field_3_wysiwyg_content" type="X2"></field>
+
+		<field name="field_4_wysiwyg_content" type="X2"></field>
+
+
+	</table>
+</schema>
