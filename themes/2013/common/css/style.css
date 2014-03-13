@@ -412,11 +412,20 @@ body {
   margin: 0 auto;
   width: 960px;
   padding: 72px 0 20px 0;
+  /* 20140313公開後不要 */
 }
 .mod_footer .mod_footernav h1.footernavtitle {
   float: left;
   width: 235px;
   padding: 4px 0 0 5px;
+}
+.mod_footer .mod_footernav .footernavtitle {
+  float: left;
+  width: 240px;
+  text-align: center;
+}
+.mod_footer .mod_footernav .footernavtitle h1 {
+  padding: 4px 0 20px 0;
 }
 .mod_footer .mod_footernav .mod_footernav_block {
   float: left;
@@ -467,11 +476,17 @@ body {
   .mod_footer .mod_footernav {
     width: 100%;
     padding: 10px 0 20px 0;
+    /* 20140313公開後不要 */
   }
   .mod_footer .mod_footernav h1.footernavtitle {
     float: none;
     width: 97%;
     padding: 0 0 20px 3%;
+  }
+  .mod_footer .mod_footernav .footernavtitle {
+    float: none;
+    width: auto;
+    padding-bottom: 20px;
   }
   .mod_footer .mod_footernav .mod_footernav_block:nth-child(2) {
     border-left: none;
@@ -479,7 +494,7 @@ body {
 }
 @media screen and (max-width: 717px) {
   .mod_footer .mod_relation {
-    top: 150px;
+    position: static;
   }
   .mod_footer .mod_relation form {
     float: left;
@@ -491,6 +506,9 @@ body {
   }
   .mod_footer .mod_relation form input.ccm-search-block-submit {
     width: 25%;
+  }
+  .mod_footer .mod_footernav {
+    /* 20140313公開後不要 */
   }
   .mod_footer .mod_footernav h1.footernavtitle {
     width: 100%;

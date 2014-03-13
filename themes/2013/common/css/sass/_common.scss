@@ -195,7 +195,10 @@ body{
   }
   .lt-ie8 form p{width:210px;}
   .mod_footernav{margin:0 auto; width:960px; padding:72px 0 20px 0;
-   h1.footernavtitle{float:left; width:235px; padding:4px 0 0 5px;}
+   h1.footernavtitle{float:left; width:235px; padding:4px 0 0 5px;}/* 20140313公開後不要 */
+   .footernavtitle{float:left; width:240px; text-align:center; 
+    h1{padding:4px 0 20px 0;}
+   }
    .mod_footernav_block{float:left; width:217px; border-left:solid 1px #BBBBBB; padding:0 0 5px 21px;
      h1{padding:2px 0 9px 0;
 			 a{display:block;}
@@ -220,14 +223,15 @@ body{
    }
   }
   .mod_footernav{width:100%; padding:10px 0 20px 0;
-   h1.footernavtitle{float:none; width:97%; padding:0 0 20px 3%;}
+   h1.footernavtitle{float:none; width:97%; padding:0 0 20px 3%;}/* 20140313公開後不要 */
+   .footernavtitle{float:none; width:auto; padding-bottom:20px;}
    .mod_footernav_block:nth-child(2){border-left:none;}
   }
 }
 }
 @media screen and (max-width:717px){
 .mod_footer{
-  .mod_relation{ top:150px;
+  .mod_relation{position:static;
    ul{
      li{}
    }
@@ -237,7 +241,7 @@ body{
    }
   }
   .mod_footernav{
-   h1.footernavtitle{width:100%; padding:0; text-align:center; margin:0 0 80px 0;}
+   h1.footernavtitle{width:100%; padding:0; text-align:center; margin:0 0 80px 0;}/* 20140313公開後不要 */
    .mod_footernav_block{display:none;
      h1{
        a{border-bottom:solid 1px #CCCCCC; padding:10px;position:relative;}
